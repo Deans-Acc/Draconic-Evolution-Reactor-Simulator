@@ -132,7 +132,12 @@ public class Reactor extends JFrame {
             if (Fuel > 0) {
                 Fuel -= fuelUseRate;
             }
-            all = all.add((BigInteger.valueOf(output - input)));
+            if (output >= generationRate) {
+                all = all.add((BigInteger.valueOf(output - input)));
+            }
+            else {
+                all = all.add((BigInteger.valueOf( (long) generationRate - input)));
+            }
             Debug();
             Test();
 

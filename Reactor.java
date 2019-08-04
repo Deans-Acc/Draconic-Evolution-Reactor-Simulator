@@ -168,7 +168,7 @@ public class Reactor extends JFrame {
         if(shieldCharge <= 0 && Temp > 2000) {
             while (true) {
                 Debug();
-                text += "\n + Reactor exploded";
+                text += "\n Reactor exploded";
                 Area.setText(text);
                 while(true) {
 
@@ -178,7 +178,7 @@ public class Reactor extends JFrame {
         if(Temp < 2001) {
             while (true) {
                 Debug();
-                text += "\n + Reactor cooled down";
+                text += "\n Reactor cooled down";
                 Area.setText(text);
                 while(true) {
                     
@@ -188,7 +188,7 @@ public class Reactor extends JFrame {
         if(Temp < 2500 && (double) Saturation / (double) maxSaturation >= 0.99) {
             while (true) {
                 Debug();
-                text += "\n + Fail-Safe triggered";
+                text += "\n Fail-Safe triggered";
                 Area.setText(text);
                 while(true) {
                     

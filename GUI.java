@@ -67,6 +67,7 @@ public class GUI extends JFrame{
 
         Area.setBounds(50 + xoff, 350 + yoff, 400, 200);
         Area.setFont(Fonts.get_middleFont());
+        Area.setEditable(false);
         cp.add(Area);
 
         pause.setBounds(300 + xoff, 255 + yoff, 100 ,50);
@@ -81,7 +82,7 @@ public class GUI extends JFrame{
         cp.add(pause);
 
         confirm.setBounds(300 + xoff, 250 + yoff, 100, 50);
-        confirm.setText("Bestätigen");
+        confirm.setText("Confirm");
         confirm.setFont(Fonts.get_middleFont());
         confirm.addActionListener(new ActionListener() { 
             public void actionPerformed(ActionEvent evt) { 
